@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"index_atlas_", frames: [[664,408,201,45],[664,257,252,62],[504,631,410,10],[0,668,170,16],[943,328,30,27],[988,407,29,18],[975,321,30,17],[895,408,15,25],[960,92,23,17],[889,443,28,27],[960,48,20,23],[960,169,17,17],[982,48,25,18],[919,429,18,33],[943,357,29,27],[960,73,27,17],[964,456,28,18],[960,207,16,18],[999,340,21,24],[994,447,18,27],[990,427,28,18],[978,207,15,18],[919,464,27,18],[964,428,24,26],[984,24,22,18],[958,292,30,27],[966,386,20,28],[939,392,25,34],[867,408,26,33],[912,356,29,34],[953,257,26,33],[889,321,38,33],[939,428,23,34],[929,292,27,34],[912,392,25,35],[918,257,33,33],[1008,20,14,22],[1006,0,18,18],[974,357,23,23],[988,382,23,23],[960,111,20,17],[929,328,12,17],[912,429,5,5],[984,0,20,22],[948,464,14,23],[960,0,22,22],[960,150,18,17],[960,130,18,18],[960,188,17,17],[960,24,22,22],[664,455,223,22],[0,257,350,224],[504,490,498,45],[504,537,498,45],[504,584,498,45],[664,321,223,45],[352,257,310,231],[0,483,300,183],[302,490,200,193],[664,368,246,38],[0,0,958,255]]}
+		{name:"index_atlas_", frames: [[594,584,273,45],[302,584,290,62],[500,702,410,10],[302,648,170,16],[500,648,30,27],[829,562,29,18],[725,678,30,17],[907,598,15,25],[887,644,23,17],[564,648,28,27],[912,535,20,23],[950,533,17,17],[802,563,25,18],[869,555,18,33],[831,490,29,27],[932,514,27,17],[757,678,28,18],[929,623,16,18],[889,548,21,24],[887,615,18,27],[787,678,28,18],[940,577,15,18],[903,515,27,18],[862,490,24,26],[474,648,22,18],[532,648,30,27],[881,518,20,28],[829,526,25,34],[859,631,26,33],[854,666,29,34],[885,666,26,33],[819,631,38,33],[856,519,23,34],[802,490,27,34],[802,526,25,35],[819,666,33,33],[924,580,14,22],[912,644,18,18],[888,490,23,23],[869,590,23,23],[907,625,20,17],[943,597,12,17],[881,548,5,5],[937,490,20,22],[934,533,14,23],[913,490,22,22],[938,558,18,17],[918,560,18,18],[924,604,17,17],[894,574,22,22],[500,678,223,22],[0,257,350,224],[0,668,498,45],[302,490,498,45],[302,537,498,45],[594,631,223,45],[352,257,310,231],[0,483,300,183],[664,257,200,193],[0,0,958,255],[664,452,280,36]]}
 ];
 
 
@@ -11,7 +11,7 @@ lib.ssMetadata = [
 
 
 
-(lib.CachedBmp_423 = function() {
+(lib.CachedBmp_604 = function() {
 	this.initialize(ss["index_atlas_"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
@@ -424,14 +424,14 @@ lib.ssMetadata = [
 
 
 
-(lib.salestext2new = function() {
+(lib.salestextlandscape = function() {
 	this.initialize(ss["index_atlas_"]);
 	this.gotoAndStop(59);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.salestextlandscape = function() {
+(lib.salestexts2landscapenew = function() {
 	this.initialize(ss["index_atlas_"]);
 	this.gotoAndStop(60);
 }).prototype = p = new cjs.Sprite();
@@ -472,14 +472,14 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	this.initialize(mode,startPosition,loop,{});
 
 	// Layer_1
-	this.instance = new lib.CachedBmp_423();
-	this.instance.setTransform(0,0,0.5,0.5);
+	this.instance = new lib.CachedBmp_604();
+	this.instance.setTransform(-18,0,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.Symbol11, new cjs.Rectangle(0,0,100.5,22.5), null);
+}).prototype = getMCSymbolPrototype(lib.Symbol11, new cjs.Rectangle(-18,0,136.5,22.5), null);
 
 
 (lib.Symbol9 = function(mode,startPosition,loop) {
@@ -721,14 +721,14 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	this.initialize(mode,startPosition,loop,{});
 
 	// Layer_1
-	this.instance = new lib.salestext2new();
+	this.instance = new lib.salestexts2landscapenew();
 	this.instance.setTransform(0,0,0.5812,0.581);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.Symbol2, new cjs.Rectangle(0,0,143,22.1), null);
+}).prototype = getMCSymbolPrototype(lib.Symbol2, new cjs.Rectangle(0,0,162.8,20.9), null);
 
 
 (lib.Symbol1 = function(mode,startPosition,loop) {
@@ -806,20 +806,20 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 
 	// Layer_2
 	this.instance = new lib.Symbol11();
-	this.instance.setTransform(63.5,15.55,1,1,0,0,0,50.2,11.2);
+	this.instance.setTransform(64.65,15.55,1,1,0,0,0,50.2,11.2);
 	this.instance.shadow = new cjs.Shadow("rgba(0,0,0,1)",2,0,4);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	// Layer_1
 	this.instance_1 = new lib.CachedBmp_422();
-	this.instance_1.setTransform(0,0,0.5,0.5);
+	this.instance_1.setTransform(-8.05,0,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.Symbol10, new cjs.Rectangle(0,-0.6,126,36), null);
+}).prototype = getMCSymbolPrototype(lib.Symbol10, new cjs.Rectangle(-8,-0.6,150.5,36), null);
 
 
 (lib.Symbol3_1 = function(mode,startPosition,loop) {
@@ -945,18 +945,18 @@ p.nominalBounds = new cjs.Rectangle(0,0,249,88.5);
 
 	// sale_texts_1
 	this.instance_9 = new lib.Symbol1();
-	this.instance_9.setTransform(229.25,24.85,1.2934,1.2934,0,0,0,70.2,18.8);
+	this.instance_9.setTransform(229.25,32.3,1.2934,1.2934,0,0,0,70.2,18.8);
 	this.instance_9._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_9).wait(219).to({_off:false},0).to({regY:18.7,scaleX:1,scaleY:1,x:229.2,y:24.7},10,cjs.Ease.get(1)).wait(21));
+	this.timeline.addTween(cjs.Tween.get(this.instance_9).wait(219).to({_off:false},0).to({regY:18.7,scaleX:1,scaleY:1,x:229.2,y:26.7},10,cjs.Ease.get(1)).wait(21));
 
 	// sales_texts_2
 	this.instance_10 = new lib.Symbol2();
-	this.instance_10.setTransform(228.5,59.1,1,1,0,0,0,71.5,11.1);
+	this.instance_10.setTransform(220.5,60.55,1,1,0,0,0,71.5,11.1);
 	this.instance_10.alpha = 0;
 	this.instance_10._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_10).wait(229).to({_off:false},0).to({alpha:1},10).wait(11));
+	this.timeline.addTween(cjs.Tween.get(this.instance_10).wait(229).to({_off:false},0).to({scaleX:0.9216,scaleY:0.921,x:220.4,y:59.65,alpha:1},10).wait(11));
 
 	// bg_bottom
 	this.instance_11 = new lib.Symbol9();
@@ -978,7 +978,7 @@ lib.properties = {
 	color: "#00497B",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_.png?1588624636378", id:"index_atlas_"}
+		{src:"images/index_atlas_.png?1588820562316", id:"index_atlas_"}
 	],
 	preloads: []
 };
